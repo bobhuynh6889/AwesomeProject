@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text, SafeAreaView} from 'react-native';
-import {Button, TextInput} from 'react-native-paper';
+import {Button, TextInput, Checkbox} from 'react-native-paper';
 import moment from 'moment';
 
 export default function index() {
   const [text, setText] = React.useState('');
+  const [checked, setChecked] = React.useState(false);
+
   return (
     <SafeAreaView
       style={{
@@ -35,6 +37,12 @@ export default function index() {
         label="Email"
         value={text}
         onChangeText={(text) => setText(text)}
+      />
+      <Checkbox
+        status={checked ? 'checked' : 'unchecked'}
+        onPress={() => {
+          setChecked(!checked);
+        }}
       />
 
       <Text>{moment('02/11/1995').format('DD / MM / YYYY hh:mm:ss a')}</Text>

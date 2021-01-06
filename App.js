@@ -48,9 +48,9 @@ import {NavigationContainer} from '@react-navigation/native';
 // import BaiTap8 from './src/component/BaiTap8';
 // import BaiTap9 from './src/component/BaiTap9';
 // import Login1 from './src/component/Session04/Login1';
-import Category from './src/component/Session04/Category';
+// import Category from './src/component/Session04/Category';
 // import Baicuathay from './src/component/Baicuathay';
-import Register from './src/component/Session04/Register';
+// import Register from './src/component/Session04/Register';
 // import Baicuathay2 from './src/component/Baicuathay2';
 // import GalleryHome from './src/component/Session06/GalleryHome';
 // import GalleryThay from './src/component/Session06/GalleryThay';
@@ -59,51 +59,64 @@ import Register from './src/component/Session04/Register';
 // import SectionListExample from './src/component/Session05/SectionListExample';
 // import SectionListAdvancedExample from './src/component/Session05/SectionListAdvancedExample';
 // import ScrollViewExample from './src/component/Session05/ScrollViewExample';
-import WelcomeWala from './src/wala/WelcomeWala';
-import Started from './src/wala/Started';
-import LoginWala from './src/wala/LoginWala';
-import ForgotPassword from './src/wala/ForgotPassword';
-import HeaderWala from './src/wala/HeaderWala';
-import RecoveryPassword from './src/wala/RecoveryPassword';
+// import WelcomeWala from './src/wala/WelcomeWala';
+// import Started from './src/wala/Started';
+// import LoginWala from './src/wala/LoginWala';
+// import ForgotPassword from './src/wala/ForgotPassword';
+// import HeaderWala from './src/wala/HeaderWala';
+// import RecoveryPassword from './src/wala/RecoveryPassword';
 
-import LoginPM from './src/component/Session06/LoginwithPM/LoginPM';
-import PassChangeSucced from './src/wala/PassChangeSucced';
-import LoginWala2 from './src/wala/LoginWala2';
-import StackNavigation from './src/component/Session08/StackNavigation';
-import Product from './src/component/Product';
-import Product1Screen from './src/component/Session08/screens/Product1Screen';
-import Product2 from './src/component/Product2';
-import AppNavigator from './src/component/Session08/AppNavigator';
+// import LoginPM from './src/component/Session06/LoginwithPM/LoginPM';
+// import PassChangeSucced from './src/wala/PassChangeSucced';
+// import LoginWala2 from './src/wala/LoginWala2';
+// import StackNavigation from './src/component/Session08/StackNavigation';
+// import Product from './src/component/Product';
+// import Product1Screen from './src/component/Session08/screens/Product1Screen';
+// import Product2 from './src/component/Product2';
+// import AppNavigator from './src/component/Session08/AppNavigator';
 
 // import ClickPicture from './src/component/Session07/ClickPicture';
 
-import Session09 from './src/component/Session09';
+// import Session09 from './src/component/Session09';
 // import AsyncStorageExample from './src/component/Session09/AsyncStorageExample';
 
-import LoginFormikExample from './src/component/Session10/LoginFormikExample';
+// import LoginFormikExample from './src/component/Session10/LoginFormikExample';
 
-import ReactNativePaper from './src/ReactNativePaper';
+// import ReactNativePaper from './src/ReactNativePaper';
 
-import FireStoreExample from './src/component/Session11/FireStoreExample';
-import FirestoreQuiz from './src/component/Session11/FirestoreQuiz';
-import FireStoreRealtimeExample from './src/component/Session11/FireStoreRealtimeExample';
-import BaiThay from './src/component/Session11/BaiThay';
-import FireStoreChatRealTime from './src/component/Session11/FireStoreChatRealTime';
-import ImageCropPiker from './src/component/Session11/ImageCropPiker';
-import RemoteConfig from './src/component/Session11/RemoteConfig';
+// import FireStoreExample from './src/component/Session11/FireStoreExample';
+// import FirestoreQuiz from './src/component/Session11/FirestoreQuiz';
+// import FireStoreRealtimeExample from './src/component/Session11/FireStoreRealtimeExample';
+// import BaiThay from './src/component/Session11/BaiThay';
+// import FireStoreChatRealTime from './src/component/Session11/FireStoreChatRealTime';
+// import ImageCropPiker from './src/component/Session11/ImageCropPiker';
+// import RemoteConfig from './src/component/Session11/RemoteConfig';
+// import EmailAuthenExample from './src/component/Session11/AuthenticationExample/EmailAuthenExample';
+// import PhoneAuthenExample from './src/component/Session11/AuthenticationExample/PhoneAuthenExample';
+// import AppNavigator2 from './src/component/Session11/AuthenticationExample/AuthenticationFlow/AppNavigator';
+
+// Session 12
+import Text from './src/component/Session12/Text';
 
 // UI Kitten
-import Home from './src/component/UIKitten/Home';
-import Category2 from './src/component/UIKitten/components/Category';
+// import Home from './src/component/UIKitten/Home';
+// import Category2 from './src/component/UIKitten/components/Category';
 
 // UI
-import Screen1 from './src/component/UI/Avatar3D/Screen1';
-import Screen2 from './src/component/UI/Avatar3D/Screen2';
-import Component1 from './src/component/UI/Component1';
-import Component2 from './src/component/UI/Component2';
-import Component3 from './src/component/UI/Component3';
-import Component4 from './src/component/UI/Component4';
-import Arrow from './src/component/UI/Avatar3D/components/Arrow';
+// import Screen1 from './src/component/UI/Avatar3D/Screen1';
+// import Screen2 from './src/component/UI/Avatar3D/Screen2';
+// import Component1 from './src/component/UI/Component1';
+// import Component2 from './src/component/UI/Component2';
+// import Component3 from './src/component/UI/Component3';
+// import Component4 from './src/component/UI/Component4';
+// import Arrow from './src/component/UI/Avatar3D/components/Arrow';
+
+// App English
+// import TestScreen from './src/AppEnglish/TestScreen';
+// import HomeEnglish from './src/AppEnglish/components/Home';
+// import AppNavigatorEnglish from './src/AppEnglish/AppNavigatorEnglish';
+// import TestScreen2 from './src/AppEnglish/TestScreen2';
+
 const App = () => {
   return (
     <View style={{flex: 1}}>
@@ -162,17 +175,27 @@ const App = () => {
       {/* <FireStoreChatRealTime /> */}
       {/* <ImageCropPiker /> */}
       {/* <RemoteConfig /> */}
+      {/* <EmailAuthenExample /> */}
+      {/* <PhoneAuthenExample /> */}
+      {/* <AppNavigator2 /> */}
+
+      <Text />
 
       {/* <Home /> */}
       {/* <Category2 /> */}
 
-      <Screen1 />
+      {/* <Screen1 /> */}
       {/* <Screen2 /> */}
       {/* <Component1 /> */}
       {/* <Component2 /> */}
       {/* <Component3 /> */}
       {/* <Component4 /> */}
       {/* <Arrow /> */}
+
+      {/* <TestScreen /> */}
+      {/* <HomeEnglish /> */}
+      {/* <AppNavigatorEnglish /> */}
+      {/* <TestScreen2 /> */}
     </View>
   );
 };
