@@ -13,6 +13,8 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import firestore from '@react-native-firebase/firestore';
 import {FlatList, TouchableOpacity} from 'react-native-gesture-handler';
 
+
+
 export default function FireStoreExample() {
   const [refresh, setRefresh] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
@@ -44,25 +46,10 @@ export default function FireStoreExample() {
   //Add a user
   const addUser = () => {
     firestore()
-      .collection('Questions')
+      .collection('Users')
       .add({
-        content: 'What problem does Mr. Phan mention in his e-mail?',
-
-        options: [
-          {
-            text: 'He received the wrong item.',
-            correct: true,
-          },
-          {
-            text: 'He was charged the wrong price.',
-          },
-          {
-            text: 'The delivery time was too long.',
-          },
-          {
-            text: 'The instructions were too confusing.',
-          },
-        ],
+        name:'Duy',
+        age:'10',
       })
       .then(() => {
         console.log('User added!');
@@ -119,6 +106,7 @@ export default function FireStoreExample() {
       {!loading && (
         <React.Fragment>
           <Button title="Add user" onPress={addUser} />
+          
           <FlatList
             data={users}
             keyExtractor={(item, index) => 'user-' + index}

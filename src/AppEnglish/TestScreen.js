@@ -9,6 +9,8 @@ export default function index() {
   const [index, setIndex] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
   const [questions, setQuestions] = React.useState(null);
+  
+
 
   const getQuestion = () => {
     const data = [];
@@ -69,8 +71,7 @@ export default function index() {
                       correct: o.correct,
                     })
                     .then(() => {
-                      // setIndex(index + 1);
-                      // setNumber(number + 1);
+                      
                     });
                 }}>
                 <Text style={{fontSize: 20, marginLeft: 10}}>{o.text}</Text>

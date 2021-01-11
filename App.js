@@ -84,6 +84,8 @@ import {NavigationContainer} from '@react-navigation/native';
 
 // import ReactNativePaper from './src/ReactNativePaper';
 
+//SESSION 11
+
 // import FireStoreExample from './src/component/Session11/FireStoreExample';
 // import FirestoreQuiz from './src/component/Session11/FirestoreQuiz';
 // import FireStoreRealtimeExample from './src/component/Session11/FireStoreRealtimeExample';
@@ -95,11 +97,14 @@ import {NavigationContainer} from '@react-navigation/native';
 // import PhoneAuthenExample from './src/component/Session11/AuthenticationExample/PhoneAuthenExample';
 // import AppNavigator2 from './src/component/Session11/AuthenticationExample/AuthenticationFlow/AppNavigator';
 
-// Session 12
-import Text from './src/component/Session12/Text';
+// SESSION 12
+
+// import KiemTra from './src/component/Session12/KiemTra'
+import OneSignalExample from './src/component/Session12/OneSignalExample';
+
 
 // UI Kitten
-// import Home from './src/component/UIKitten/Home';
+import Home from './src/component/UIKitten/Home';
 // import Category2 from './src/component/UIKitten/components/Category';
 
 // UI
@@ -112,10 +117,13 @@ import Text from './src/component/Session12/Text';
 // import Arrow from './src/component/UI/Avatar3D/components/Arrow';
 
 // App English
-// import TestScreen from './src/AppEnglish/TestScreen';
+import TestScreen from './src/AppEnglish/TestScreen';
 // import HomeEnglish from './src/AppEnglish/components/Home';
-// import AppNavigatorEnglish from './src/AppEnglish/AppNavigatorEnglish';
-// import TestScreen2 from './src/AppEnglish/TestScreen2';
+import AppNavigatorEnglish from './src/AppEnglish/AppNavigatorEnglish';
+import TestScreen2 from './src/AppEnglish/TestScreen2';
+import AddQuestion from './src/AppEnglish/AddQuestion';
+import FinishScreen from './src/AppEnglish/FinishScreen';
+
 
 const App = () => {
   return (
@@ -179,7 +187,8 @@ const App = () => {
       {/* <PhoneAuthenExample /> */}
       {/* <AppNavigator2 /> */}
 
-      <Text />
+      {/* <KiemTra/> */}
+      {/* <OneSignalExample/> */}
 
       {/* <Home /> */}
       {/* <Category2 /> */}
@@ -194,8 +203,10 @@ const App = () => {
 
       {/* <TestScreen /> */}
       {/* <HomeEnglish /> */}
-      {/* <AppNavigatorEnglish /> */}
+      <AppNavigatorEnglish />
       {/* <TestScreen2 /> */}
+      {/* <AddQuestion/> */}
+      {/* <FinishScreen/> */}
     </View>
   );
 };

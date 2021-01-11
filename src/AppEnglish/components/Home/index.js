@@ -45,7 +45,7 @@ export default function index({navigation}) {
         <Button
           mode="contained"
           onPress={() => {
-            navigation.navigate('TestScreen');
+            navigation.navigate('TestScreen2');
             console.log('Go');
           }}>
           Let's go
