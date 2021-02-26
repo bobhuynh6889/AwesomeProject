@@ -29,6 +29,10 @@ export default function OneSignalExample() {
       console.log('Device info: ', device);
     });
 
+    OneSignal.getUserId('ID', () => {
+      console.log('ID');
+    });
+
     return () => {
       OneSignal.removeEventListener('received');
       OneSignal.removeEventListener('opened');

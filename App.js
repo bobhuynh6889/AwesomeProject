@@ -29,7 +29,7 @@ import {
 import 'react-native-gesture-handler';
 
 import {NavigationContainer} from '@react-navigation/native';
-// SESSION 04
+
 // import Login from './src/wala/WelcomeWala';
 // import HeartButton from './src/component/HeartButton';
 // import Product from './src/component/Product';
@@ -38,6 +38,7 @@ import {NavigationContainer} from '@react-navigation/native';
 // import ProductM from './src/component/ProductM';
 
 // BAI TAP UI
+
 // import BaiTap1 from './src/component/BaiTap/BaiTap1';
 // import BaiTap2 from './src/component/BaiTap2';
 // import BaiTap3 from './src/component/BaiTap3';
@@ -47,19 +48,28 @@ import {NavigationContainer} from '@react-navigation/native';
 // import BaiTap7 from './src/component/BaiTap7';
 // import BaiTap8 from './src/component/BaiTap8';
 // import BaiTap9 from './src/component/BaiTap9';
+
+//SESSION 04
+
 // import Login1 from './src/component/Session04/Login1';
 // import Category from './src/component/Session04/Category';
 // import Baicuathay from './src/component/Baicuathay';
-// import Register from './src/component/Session04/Register';
+import Register from './src/component/Session04/Register';
 // import Baicuathay2 from './src/component/Baicuathay2';
 // import GalleryHome from './src/component/Session06/GalleryHome';
 // import GalleryThay from './src/component/Session06/GalleryThay';
 // import Register2 from './src/component/Session04/Register2';
+
+// SESSION 05
+
 // import FlatList from './src/component/Session05/FlatList';
 // import SectionListExample from './src/component/Session05/SectionListExample';
 // import SectionListAdvancedExample from './src/component/Session05/SectionListAdvancedExample';
 // import ScrollViewExample from './src/component/Session05/ScrollViewExample';
-// import WelcomeWala from './src/wala/WelcomeWala';
+
+// WALA
+
+import WelcomeWala from './src/wala/WelcomeWala';
 // import Started from './src/wala/Started';
 // import LoginWala from './src/wala/LoginWala';
 // import ForgotPassword from './src/wala/ForgotPassword';
@@ -73,16 +83,21 @@ import {NavigationContainer} from '@react-navigation/native';
 // import Product from './src/component/Product';
 // import Product1Screen from './src/component/Session08/screens/Product1Screen';
 // import Product2 from './src/component/Product2';
-// import AppNavigator from './src/component/Session08/AppNavigator';
+import AppNavigator from './src/component/Session08/AppNavigator';
+
+//SESSION 07
 
 // import ClickPicture from './src/component/Session07/ClickPicture';
+import UseContext from './src/component/Session07/UseContext';
+import UseReducer from './src/component/Session07/UseReducer';
+
 
 // import Session09 from './src/component/Session09';
 // import AsyncStorageExample from './src/component/Session09/AsyncStorageExample';
 
-// import LoginFormikExample from './src/component/Session10/LoginFormikExample';
+import LoginFormikExample from './src/component/Session10/LoginFormikExample';
 
-// import ReactNativePaper from './src/ReactNativePaper';
+import ReactNativePaper from './src/ReactNativePaper';
 
 //SESSION 11
 
@@ -102,14 +117,16 @@ import {NavigationContainer} from '@react-navigation/native';
 // import KiemTra from './src/component/Session12/KiemTra'
 import OneSignalExample from './src/component/Session12/OneSignalExample';
 
+// SESSION 13
+import ReduxApp from './src/component/Session13/';
 
 // UI Kitten
-import Home from './src/component/UIKitten/Home';
+// import Home from './src/component/UIKitten/Home';
 // import Category2 from './src/component/UIKitten/components/Category';
 
 // UI
-// import Screen1 from './src/component/UI/Avatar3D/Screen1';
-// import Screen2 from './src/component/UI/Avatar3D/Screen2';
+import Screen1 from './src/component/UI/Avatar3D/Screen1';
+import Screen2 from './src/component/UI/Avatar3D/Screen2';
 // import Component1 from './src/component/UI/Component1';
 // import Component2 from './src/component/UI/Component2';
 // import Component3 from './src/component/UI/Component3';
@@ -117,13 +134,13 @@ import Home from './src/component/UIKitten/Home';
 // import Arrow from './src/component/UI/Avatar3D/components/Arrow';
 
 // App English
-import TestScreen from './src/AppEnglish/TestScreen';
+// import TestScreen from './src/AppEnglish/TestScreen';
 // import HomeEnglish from './src/AppEnglish/components/Home';
 import AppNavigatorEnglish from './src/AppEnglish/AppNavigatorEnglish';
-import TestScreen2 from './src/AppEnglish/TestScreen2';
+// import TestScreen2 from './src/AppEnglish/TestScreen2';
 import AddQuestion from './src/AppEnglish/AddQuestion';
 import FinishScreen from './src/AppEnglish/FinishScreen';
-
+import Test from './src/AppEnglish/Test'
 
 const App = () => {
   return (
@@ -207,6 +224,12 @@ const App = () => {
       {/* <TestScreen2 /> */}
       {/* <AddQuestion/> */}
       {/* <FinishScreen/> */}
+      {/* <Test/> */}
+
+      {/* <UseContext /> */}
+      {/* <UseReducer/> */}
+
+      {/* <ReduxApp /> */}
     </View>
   );
 };

@@ -8,6 +8,7 @@ export default function AddQuestion() {
     firestore()
       .collection('Questions')
       .add({
+        id: 1,
         content: 'This shirt is made .... cotton.',
         options: [
           {

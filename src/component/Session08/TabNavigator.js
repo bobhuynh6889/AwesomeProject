@@ -15,17 +15,21 @@ const Tab = createMaterialBottomTabNavigator();
 export default function TabNavigator() {
   return (
     <Tab.Navigator
-      shifting={false}
-      activeColor="black"
-      inactiveColor="gray"
-      barStyle={{backgroundColor: 'pink'}}>
+      shifting={true}
+      activeColor="#f9ca24"
+      inactiveColor="#ecf0f1"
+      barStyle={{
+        
+    }}
+      >
       <Tab.Screen
         name="Home"
         component={HomeScreen}
         options={{
+          tabBarColor: "#e056fd",
           tabBarIcon: ({focused, color}) => {
             return (
-              <Icon name="home" color={focused ? 'black' : 'gray'} size={24} />
+              <Icon name="home" color={focused ? '#f9ca24' : '#ecf0f1'} size={24} />
             );
           },
         }}
@@ -34,9 +38,10 @@ export default function TabNavigator() {
         name="Product"
         component={Product1Screen}
         options={{
+          tabBarColor: "#f0932b",
           tabBarIcon: ({focused, color}) => {
             return (
-              <Icon name="apps" color={focused ? 'black' : 'gray'} size={24} />
+              <Icon name="apps" color={focused ? '#f9ca24' : '#ecf0f1'} size={24} />
             );
           },
         }}
@@ -45,10 +50,11 @@ export default function TabNavigator() {
         name="Notification"
         component={NotificationScreen}
         options={{
-          tabBarBadge: 100,
+          tabBarBadge: 99,
+          tabBarColor: "#eb4d4b",
           tabBarIcon: ({focused, color}) => {
             return (
-              <Icon name="bell" color={focused ? 'black' : 'gray'} size={24} />
+              <Icon name="bell" color={focused ? '#f9ca24' : '#ecf0f1'} size={24} />
             );
           },
         }}
@@ -57,11 +63,12 @@ export default function TabNavigator() {
         name="Account"
         component={AccountScreen}
         options={{
+          tabBarColor: "#6ab04c",
           tabBarIcon: ({focused, color}) => {
             return (
               <Icon
                 name="account"
-                color={focused ? 'black' : 'gray'}
+                color={focused ? '#f9ca24' : '#ecf0f1'}
                 size={24}
               />
             );

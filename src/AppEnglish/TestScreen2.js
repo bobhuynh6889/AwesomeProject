@@ -18,6 +18,7 @@ export default function TestScreen2({navigation}) {
   const [index, setIndex] = React.useState(0);
   const [loading, setLoading] = React.useState(true);
   const [questions, setQuestions] = React.useState(null);
+  const [time, setTime] = React.useState(10);
   const [id, setId] = React.useState(0);
 
   const getQuestion = () => {
@@ -46,7 +47,7 @@ export default function TestScreen2({navigation}) {
     <SafeAreaView style={{flex: 1, marginHorizontal: 10}}>
       <View style={{height: 100}}>
         <CountDown
-          until={60 * 15}
+          until={time}
           size={30}
           onFinish={() => Alert.alert('Hoàn thành', 'Xem kết quả')}
           digitStyle={{backgroundColor: '#ecf0f1'}}
@@ -67,41 +68,41 @@ export default function TestScreen2({navigation}) {
           <View style={{height: 180}}>
             <TouchableOpacity
               style={{height: 40, flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => setChecked('first')}>
+              onPress={() => setChecked('0')}>
               <RadioButton
                 color="black"
-                value="first"
-                status={checked === 'first' ? 'checked' : 'unchecked'}
+                value="0"
+                status={checked === '0' ? 'checked' : 'unchecked'}
               />
               <Text>{questions[index].options[id].text}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={{height: 40, flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => setChecked('second')}>
+              onPress={() => setChecked('1')}>
               <RadioButton
                 color="black"
-                value="second"
-                status={checked === 'second' ? 'checked' : 'unchecked'}
+                value="1"
+                status={checked === '1' ? 'checked' : 'unchecked'}
               />
               <Text>{questions[index].options[id + 1].text}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={{height: 40, flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => setChecked('third')}>
+              onPress={() => setChecked('2')}>
               <RadioButton
                 color="black"
-                value="third"
-                status={checked === 'third' ? 'checked' : 'unchecked'}
+                value="2"
+                status={checked === '2' ? 'checked' : 'unchecked'}
               />
               <Text>{questions[index].options[id + 2].text}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={{height: 40, flexDirection: 'row', alignItems: 'center'}}
-              onPress={() => setChecked('fourth')}>
+              onPress={() => setChecked('3')}>
               <RadioButton
                 color="black"
-                value="fourth"
-                status={checked === 'fourth' ? 'checked' : 'unchecked'}
+                value="3"
+                status={checked === '3' ? 'checked' : 'unchecked'}
               />
               <Text>{questions[index].options[id + 3].text}</Text>
             </TouchableOpacity>
@@ -146,6 +147,7 @@ export default function TestScreen2({navigation}) {
               <Button
                 title="Finish"
                 onPress={() => {
+                  setTime(0);
                   firestore()
                     .collection('Answers')
                     .add({
